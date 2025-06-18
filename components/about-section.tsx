@@ -75,7 +75,7 @@ export function AboutSection() {
 
             <div className="flex space-x-3 sm:space-x-4 justify-center lg:justify-start">
               <motion.a
-                href="#"
+                href="https://github.com/vinayytkumar"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="p-2 sm:p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
@@ -83,7 +83,7 @@ export function AboutSection() {
                 <Github className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/in/shubham-kumar-585767319/"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="p-2 sm:p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"

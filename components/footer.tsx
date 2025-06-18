@@ -13,7 +13,7 @@ export function Footer() {
           </p>
           <div className="flex space-x-3 sm:space-x-4">
             <motion.a
-              href="#"
+              href="https://github.com/vinayytkumar"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               className="text-white/60 hover:text-white transition-colors"
@@ -21,7 +21,7 @@ export function Footer() {
               <Github className="h-4 w-4 sm:h-5 sm:w-5" />
             </motion.a>
             <motion.a
-              href="https://github.com/vinayytkumar"
+              href="https://www.linkedin.com/in/shubham-kumar-585767319/"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               className="text-white/60 hover:text-white transition-colors"

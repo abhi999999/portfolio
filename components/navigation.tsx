@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 interface NavigationProps {
   activeSection: string;
@@ -19,6 +20,7 @@ export function Navigation({
     "projects",
     "contact",
   ];
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <motion.nav
@@ -61,6 +63,7 @@ export function Navigation({
               className="text-white p-2"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <div className="w-6 h-0.5 bg-white mb-1"></div>
               <div className="w-6 h-0.5 bg-white mb-1"></div>
@@ -69,6 +72,39 @@ export function Navigation({
           </div>
         </div>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      {isMobileMenuOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="lg:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur-md border-b border-white/10"
+        >
+          <div className="container mx-auto px-4 py-4">
+            <div className="flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <motion.button
+                  key={item}
+                  onClick={() => {
+                    scrollToSection(item);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`capitalize text-left py-2 px-4 rounded-lg transition-colors ${
+                    activeSection === item
+                      ? "text-purple-400 bg-white/10"
+                      : "text-white/70 hover:text-white hover:bg-white/5"
+                  }`}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  {item}
+                </motion.button>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      )}
     </motion.nav>
   );
 }

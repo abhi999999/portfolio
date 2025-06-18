@@ -32,7 +32,7 @@ export function AboutSection() {
             <div className="relative max-w-md mx-auto lg:max-w-none">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-xl opacity-30"></div>
               <Image
-                src="/IMG_20250612_160324.jpg?height=400&width=400"
+                src="/aboutme.jpg?height=400&width=400"
                 alt="Profile"
                 width={400}
                 height={400}

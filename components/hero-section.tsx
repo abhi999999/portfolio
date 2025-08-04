@@ -74,16 +74,19 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
               View My Work
             </Button>
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="border-white/30 text-black hover:bg-white/10 hover:text-white px-6 sm:px-8 py-2 sm:py-3 w-full sm:w-auto text-sm sm:text-base"
             >
-              <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
               <a
                 href="https://drive.google.com/file/d/1d1CLmrG1xr2kk0d-CJlDM8Gq1mUnLT4s/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Download CV"
+                className="flex items-center"
               >
+                <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                 Download CV
               </a>
             </Button>

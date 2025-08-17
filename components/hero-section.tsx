@@ -46,7 +46,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
                 ease: "linear",
               }}
             >
-              Shubham Kusdfdsfsmar
+              Shubham Kumar
             </motion.span>
           </motion.h1>
 

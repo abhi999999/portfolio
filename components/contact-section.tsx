@@ -52,7 +52,7 @@ export function ContactSection() {
                     Email
                   </p>
                   <p className="text-white/70 text-sm sm:text-base break-all">
-                    shubhamkumarsk8592@gmail.com
+                    shubham136892@gmail.com
                   </p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export function ContactSection() {
                     Location
                   </p>
                   <p className="text-white/70 text-sm sm:text-base">
-                    Muzaffarnagar, UP
+                    Chandigarh
                   </p>
                 </div>
               </div>

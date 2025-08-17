@@ -68,7 +68,7 @@ export function AboutSection() {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-purple-400 flex-shrink-0" />
                 <span className="text-white/80 text-sm sm:text-base">
-                  Location: Muzaffarnagar
+                  Location: Chandigarh
                 </span>
               </div>
             </div>
@@ -76,6 +76,8 @@ export function AboutSection() {
             <div className="flex space-x-3 sm:space-x-4 justify-center lg:justify-start">
               <motion.a
                 href="https://github.com/vinayytkumar"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="p-2 sm:p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
@@ -84,6 +86,8 @@ export function AboutSection() {
               </motion.a>
               <motion.a
                 href="https://www.linkedin.com/in/shubham-kumar-585767319/"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="p-2 sm:p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
@@ -92,6 +96,8 @@ export function AboutSection() {
               </motion.a>
               <motion.a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="p-2 sm:p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"

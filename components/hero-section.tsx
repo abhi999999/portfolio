@@ -80,7 +80,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
               className="border-white/30 text-black hover:bg-white/10 hover:text-white px-6 sm:px-8 py-2 sm:py-3 w-full sm:w-auto text-sm sm:text-base"
             >
               <a
-                href="https://drive.google.com/file/d/1d1CLmrG1xr2kk0d-CJlDM8Gq1mUnLT4s/view?usp=sharing"
+                href="https://drive.google.com/file/d/1HX9389nisC45CVNwG2P3V1LYD1bhQw6Q/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download CV"

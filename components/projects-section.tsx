@@ -29,7 +29,7 @@ const projects: Project[] = [
     title: "Task Management App",
     description: "Collaborative task management with real-time updates",
     image: "/Screenshot_13.png?height=300&width=400",
-    tags: ["React", "Socket.io", "Node.js"],
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://github.com/vinayytkumar/Moderen-Timeless-Designs",
     live: "https://lakshmanpal.github.io/shubham/",
   },
@@ -76,20 +76,37 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </p>
 
             {/* Action buttons */}
+            {/* Action buttons */}
             <div className="flex space-x-2 sm:space-x-3">
-              <motion.a
-                href={project.github}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
-              >
-                <Github className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
-                <span className="text-white text-xs sm:text-sm font-medium">
-                  Code
-                </span>
-              </motion.a>
+              {project.github ? (
+                <motion.a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
+                >
+                  <Github className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
+                  <span className="text-white text-xs sm:text-sm font-medium">
+                    Code
+                  </span>
+                </motion.a>
+              ) : (
+                <div
+                  className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/10 backdrop-blur-sm rounded-full opacity-50 cursor-not-allowed"
+                  aria-label="No code available"
+                >
+                  <Github className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
+                  <span className="text-white text-xs sm:text-sm font-medium">
+                    Code
+                  </span>
+                </div>
+              )}
               <motion.a
                 href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-600/80 backdrop-blur-sm rounded-full hover:bg-purple-600 transition-colors"

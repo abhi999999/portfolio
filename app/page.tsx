@@ -54,7 +54,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-portfolio-bg via-portfolio-accent/15 to-portfolio-bg-secondary dark:from-slate-900 dark:via-purple-900 dark:to-slate-900 overflow-x-hidden transition-colors duration-300">
       <Navigation
         activeSection={activeSection}
         scrollToSection={scrollToSection}

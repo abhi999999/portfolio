@@ -29,14 +29,14 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
           transition={{ duration: 0.8 }}
         >
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-portfolio-text dark:text-white mb-4 sm:mb-6 leading-tight transition-colors duration-300 drop-shadow-sm"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             Hi, I'm{" "}
             <motion.span
-              className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 block sm:inline"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-portfolio-accent to-portfolio-accent-secondary block sm:inline"
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
@@ -51,7 +51,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
           </motion.h1>
 
           <motion.p
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 mb-6 sm:mb-8 max-w-xs sm:max-w-md md:max-w-2xl mx-auto leading-relaxed px-4"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-portfolio-text-muted dark:text-white/80 mb-6 sm:mb-8 max-w-xs sm:max-w-md md:max-w-2xl mx-auto leading-relaxed px-4 transition-colors duration-300 drop-shadow-sm"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -68,7 +68,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-2 sm:py-3 w-full sm:w-auto text-sm sm:text-base"
+              className="bg-gradient-to-r from-portfolio-accent to-portfolio-accent-secondary hover:from-portfolio-accent/90 hover:to-portfolio-accent-secondary/90 text-white px-6 sm:px-8 py-2 sm:py-3 w-full sm:w-auto text-sm sm:text-base transition-all duration-300 shadow-lg hover:shadow-xl"
               onClick={() => scrollToSection("projects")}
             >
               View My Work
@@ -77,7 +77,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
               asChild
               size="lg"
               variant="outline"
-              className="border-white/30 text-black hover:bg-white/10 hover:text-white px-6 sm:px-8 py-2 sm:py-3 w-full sm:w-auto text-sm sm:text-base"
+              className="border-portfolio-border dark:border-white/30 text-portfolio-text dark:text-white hover:bg-purple-600/20 px-6 sm:px-8 py-2 sm:py-3 w-full sm:w-auto text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg"
             >
               <a
                 href="https://drive.google.com/file/d/1HX9389nisC45CVNwG2P3V1LYD1bhQw6Q/view?usp=sharing"
@@ -99,7 +99,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
       >
-        <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8 text-white/60" />
+        <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8 text-portfolio-text-muted dark:text-white/60 transition-colors duration-300" />
       </motion.div>
     </section>
   );

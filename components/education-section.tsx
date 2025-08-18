@@ -36,9 +36,9 @@ const educationData: EducationItem[] = [
     location: "Shri Guru Ram Rai Public School, Muzaffarnagar, Uttar Pradesh",
     side: "right",
     delay: 0.4,
-    gradientFrom: "pink-600",
-    gradientTo: "purple-600",
-    dotColor: "pink-400",
+    gradientFrom: "purple-600",
+    gradientTo: "pink-600",
+    dotColor: "purple-400",
   },
   {
     year: "2018-2019",
@@ -48,9 +48,9 @@ const educationData: EducationItem[] = [
     location: "Shri Guru Ram Rai Public School, Muzaffarnagar, Uttar Pradesh",
     side: "left",
     delay: 0.6,
-    gradientFrom: "blue-600",
-    gradientTo: "purple-600",
-    dotColor: "blue-400",
+    gradientFrom: "purple-600",
+    gradientTo: "pink-600",
+    dotColor: "purple-400",
   },
 ];
 
@@ -86,14 +86,14 @@ function EducationCard({
         <div className="flex-1 min-w-0">
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 sm:p-6 hover:bg-white/10 transition-all duration-300"
+            className="bg-portfolio-card/80 dark:bg-white/5 backdrop-blur-sm border border-portfolio-border dark:border-white/10 rounded-xl p-4 sm:p-6 hover:bg-portfolio-card-hover dark:hover:bg-white/10 transition-all duration-300 shadow-md hover:shadow-lg"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: item.delay + 0.2 }}
               viewport={{ amount: 0.5 }}
-              className="text-yellow-400 font-bold text-sm sm:text-base mb-2"
+              className="text-portfolio-accent dark:text-yellow-400 font-bold text-sm sm:text-base mb-2 transition-colors duration-300"
             >
               {item.year}
             </motion.div>
@@ -102,7 +102,7 @@ function EducationCard({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: item.delay + 0.3 }}
               viewport={{ amount: 0.5 }}
-              className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3"
+              className="text-lg sm:text-xl font-bold text-portfolio-text dark:text-white mb-2 sm:mb-3 transition-colors duration-300"
             >
               {item.title}
             </motion.h3>
@@ -111,7 +111,7 @@ function EducationCard({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: item.delay + 0.4 }}
               viewport={{ amount: 0.5 }}
-              className="text-white/70 mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base"
+              className="text-portfolio-text-muted dark:text-white/70 mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base transition-colors duration-300"
             >
               {item.description}
             </motion.p>
@@ -120,7 +120,7 @@ function EducationCard({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: item.delay + 0.5 }}
               viewport={{ amount: 0.5 }}
-              className="text-white font-medium text-sm sm:text-base"
+              className="text-portfolio-text dark:text-white font-medium text-sm sm:text-base transition-colors duration-300"
             >
               {item.location}
             </motion.p>
@@ -135,14 +135,14 @@ function EducationCard({
             <div className="flex-1 pr-6 lg:pr-8 text-right">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="bg-portfolio-card/80 dark:bg-white/5 backdrop-blur-sm border border-portfolio-border dark:border-white/10 rounded-2xl p-6 hover:bg-portfolio-card-hover dark:hover:bg-white/10 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay + 0.2 }}
                   viewport={{ amount: 0.5 }}
-                  className="text-yellow-400 font-bold text-lg mb-2"
+                  className="text-portfolio-accent dark:text-yellow-400 font-bold text-lg mb-2 transition-colors duration-300"
                 >
                   {item.year}
                 </motion.div>
@@ -151,7 +151,7 @@ function EducationCard({
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay + 0.3 }}
                   viewport={{ amount: 0.5 }}
-                  className="text-xl lg:text-2xl font-bold text-white mb-3"
+                  className="text-xl lg:text-2xl font-bold text-portfolio-text dark:text-white mb-3 transition-colors duration-300"
                 >
                   {item.title}
                 </motion.h3>
@@ -160,7 +160,7 @@ function EducationCard({
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay + 0.4 }}
                   viewport={{ amount: 0.5 }}
-                  className="text-white/70 mb-4 leading-relaxed"
+                  className="text-portfolio-text-muted dark:text-white/70 mb-4 leading-relaxed transition-colors duration-300"
                 >
                   {item.description}
                 </motion.p>
@@ -169,7 +169,7 @@ function EducationCard({
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay + 0.5 }}
                   viewport={{ amount: 0.5 }}
-                  className="text-white font-medium"
+                  className="text-portfolio-text dark:text-white font-medium transition-colors duration-300"
                 >
                   {item.location}
                 </motion.p>
@@ -231,14 +231,14 @@ function EducationCard({
             <div className="flex-1 pl-6 lg:pl-8">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="bg-portfolio-card/80 dark:bg-white/5 backdrop-blur-sm border border-portfolio-border dark:border-white/10 rounded-2xl p-6 hover:bg-portfolio-card-hover dark:hover:bg-white/10 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay + 0.2 }}
                   viewport={{ amount: 0.5 }}
-                  className="text-yellow-400 font-bold text-lg mb-2"
+                  className="text-portfolio-accent dark:text-yellow-400 font-bold text-lg mb-2 transition-colors duration-300"
                 >
                   {item.year}
                 </motion.div>
@@ -247,7 +247,7 @@ function EducationCard({
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay + 0.3 }}
                   viewport={{ amount: 0.5 }}
-                  className="text-xl lg:text-2xl font-bold text-white mb-3"
+                  className="text-xl lg:text-2xl font-bold text-portfolio-text dark:text-white mb-3 transition-colors duration-300"
                 >
                   {item.title}
                 </motion.h3>
@@ -256,7 +256,7 @@ function EducationCard({
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay + 0.4 }}
                   viewport={{ amount: 0.5 }}
-                  className="text-white/70 mb-4 leading-relaxed"
+                  className="text-portfolio-text-muted dark:text-white/70 mb-4 leading-relaxed transition-colors duration-300"
                 >
                   {item.description}
                 </motion.p>
@@ -265,7 +265,7 @@ function EducationCard({
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay + 0.5 }}
                   viewport={{ amount: 0.5 }}
-                  className="text-white font-medium"
+                  className="text-portfolio-text dark:text-white font-medium transition-colors duration-300"
                 >
                   {item.location}
                 </motion.p>
@@ -294,7 +294,7 @@ export function EducationSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ amount: 0.3 }}
-            className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-6 sm:mb-8 text-sm sm:text-base"
+            className="inline-flex items-center space-x-2 bg-gradient-to-r from-portfolio-accent to-portfolio-accent-secondary text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-6 sm:mb-8 text-sm sm:text-base shadow-lg"
           >
             <motion.div
               animate={{ rotate: 360 }}
@@ -309,10 +309,10 @@ export function EducationSection() {
             <span className="font-semibold">LIFE TIME</span>
           </motion.div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-portfolio-text dark:text-white mb-4 transition-colors duration-300 drop-shadow-sm">
             Education
           </h2>
-          <p className="text-white/70 text-sm sm:text-base lg:text-lg max-w-xs sm:max-w-md lg:max-w-2xl mx-auto px-4">
+          <p className="text-portfolio-text-muted dark:text-white/70 text-sm sm:text-base lg:text-lg max-w-xs sm:max-w-md lg:max-w-2xl mx-auto px-4 transition-colors duration-300">
             My academic journey that shaped my technical expertise and
             problem-solving abilities
           </p>

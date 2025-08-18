@@ -47,6 +47,17 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Portfolio specific colors - Light mode */
+    --portfolio-bg: 240 20% 95%;
+    --portfolio-bg-secondary: 250 25% 92%;
+    --portfolio-text: 220 15% 15%;
+    --portfolio-text-muted: 220 10% 35%;
+    --portfolio-accent: 262 83% 58%;
+    --portfolio-accent-secondary: 316 73% 52%;
+    --portfolio-card: 0 0% 100%;
+    --portfolio-card-hover: 240 15% 97%;
+    --portfolio-border: 220 15% 85%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -81,6 +92,17 @@ body {
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Portfolio specific colors - Dark mode */
+    --portfolio-bg: 222 84% 5%;
+    --portfolio-bg-secondary: 217 33% 17%;
+    --portfolio-text: 0 0% 98%;
+    --portfolio-text-muted: 0 0% 63.9%;
+    --portfolio-accent: 262 83% 58%;
+    --portfolio-accent-secondary: 316 73% 52%;
+    --portfolio-card: 0 0% 14.9%;
+    --portfolio-card-hover: 0 0% 20%;
+    --portfolio-border: 0 0% 20%;
   }
 }
 

@@ -54,11 +54,12 @@ export function AboutSection() {
             <p className="text-base sm:text-lg text-portfolio-text-muted dark:text-white/80 leading-relaxed transition-colors duration-300">
               I'm Shubham Kumar, a creative Frontend Developer & UI/UX
               Enthusiast with a B.Tech in Computer Science. I specialize in
-              building modern, responsive web applications using React.js, HTML,
-              CSS, and JavaScript. Passionate about clean design and seamless
-              user experiences, I turn ideas into interactive, user-friendly
-              digital products. I blend design thinking with code to create
-              pixel-perfect, high-performing interfaces that users love.
+              building modern, responsive web applications using HTML, CSS,
+              Bootstrap and some about JavaScript, React Js.Passionate about
+              clean design and seamless user experiences, I turn ideas into
+              interactive, user-friendly digital products. I blend design
+              thinking with code to create pixel-perfect, high-performing
+              interfaces that users love.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
